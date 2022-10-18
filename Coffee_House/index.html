@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="container" >
+      <h2>Coffee House</h2>
+      <div id="alerts"></div>
+      <!-- Product Container -->
+      <div class="productcont">
+        <div class="product">
+          <h4 class="productname">Espresso<br/><a>Milk</a></h4>
+          <p class="price"> &#8377; 60</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Espresso<br/><a>Cream</a></h4>
+          <p class="price">&#8377; 75</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Espresso<br/><a>Latte</a></h4>
+          <p class="price">&#8377;100</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Cappuccino<br/><a>Milk</a></h4>
+          <p class="price"> &#8377; 80</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Cappuccino<br/><a>Cream</a></h4>          
+          <p class="price">&#8377; 90</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Cappuccino<br/><a>Latte</a></h4>
+          <p class="price">&#8377;125</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Latte<br/><a>Milk</a></h4>
+          <p class="price"> &#8377; 100</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Latte<br/><a>Cream</a></h4>
+          <p class="price">&#8377; 125</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h4 class="productname">Latte<br/><a>Latte</a></h4>
+          <p class="price">&#8377;150</p>
+          <button class="addtocart">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Cart Container -->
+      <div class="cart-container" id="ccontainer">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="carttable">
+          </tbody>
+        </table>
+        <hr>
+        <table id="carttotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsquantity">0</span></td>
+            <td>&#8377;<span id="total">0</span></td>
+          </tr>
+        </table>
+        <div class="cart-buttons">
+          <button id="emptycart">Empty Cart</button>
+          <button onclick="window.print()">Generate Bill</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
